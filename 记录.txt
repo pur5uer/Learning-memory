@@ -127,3 +127,10 @@ Collection接口源码（声明的方法）整理
 2021/3/29
 看了LinkedList<E>源代码
 复习了git命令并提交了2020年写的几个项目
+
+2021/3/30
+看了ArrayList<E>的源码
+
+2021/3/31
+反射技术粗略（Class、Method、Constructor）
+系统学习反射应看java.lang.reflect的文档和代码

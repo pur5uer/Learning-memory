@@ -134,3 +134,6 @@ Collection接口源码（声明的方法）整理
 2021/3/31
 反射技术粗略（Class、Method、Constructor）
 系统学习反射应看java.lang.reflect的文档和代码
+
+2021/4/2
+java.lang.reflect初识，包括接口扩展关系、类继承关系，接口AnnotatedElement以及类AccessibleObject文档阅读。

@@ -89,7 +89,7 @@
                maxThreads="150" SSLEnabled="true">
         <SSLHostConfig>
             <Certificate certificateKeystoreFile="conf/getheading.xyz.jks"
-			 certificateKeystorePass="czf32604457"/>
+			 certificateKeystorePassword="czf32604457"/>
         </SSLHostConfig>
     </Connector>
 

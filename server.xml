@@ -68,7 +68,7 @@
     -->
     <Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
-               redirectPort="443" />
+               redirectPort="8443" />
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -85,7 +85,7 @@
          the SSLImplementation selected. JSSE style configuration is used below.
     -->
 
-    <Connector port="443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+    <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
                maxThreads="150" SSLEnabled="true">
         <SSLHostConfig>
             <Certificate certificateKeystoreFile="conf/getheading.xyz.jks"

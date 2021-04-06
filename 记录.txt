@@ -137,3 +137,41 @@ Collection接口源码（声明的方法）整理
 
 2021/4/2
 java.lang.reflect初识，包括接口扩展关系、类继承关系，接口AnnotatedElement以及类AccessibleObject文档阅读。
+
+2021/4/6
+java.sql文档初步阅读。
+网站备案成功。
+在Windows Server上：
+在IIS上安装了ssl证书并令Http重定向至Https。
+在Tomcat上配置ssl证书并且解决了端口8080重定向至端口8443的问题。
+——配置server.xml：
+	<Connector port="8080" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443" />
+	
+	<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+               maxThreads="150" SSLEnabled="true" URIEncoding="UTF-8">
+        <SSLHostConfig>
+            <Certificate certificateKeystoreFile="conf/getheading.xyz.jks"
+			 certificateKeystorePassword="czf32604457"
+                type="RSA"/>
+        </SSLHostConfig>
+    </Connector>
+——配置web.xml：
+在</welcome-file-list>后换行并添加：
+    <login-config>
+<!-- Authorization setting for SSL -->
+    <auth-method>CLIENT-CERT</auth-method>
+    <realm-name>Client Cert Users-only Area</realm-name>
+    </login-config>
+    <security-constraint>
+<!-- Authorization setting for SSL -->
+    <web-resource-collection>
+    <web-resource-name>SSL</web-resource-name>
+    <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    <user-data-constraint>
+    <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+    </user-data-constraint>
+    </security-constraint>
+在修改server.xml、web.xml的过程中用git进行了版本控制，其中server.xml版本迭代到了8.0。（QAQ）

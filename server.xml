@@ -86,11 +86,10 @@
     -->
 
     <Connector port="443" protocol="org.apache.coyote.http11.Http11NioProtocol"
-               maxThreads="150" SSLEnabled="true">
+               maxThreads="150" SSLEnabled="true" scheme="https" secure="true" clientAuth="false">
         <SSLHostConfig>
             <Certificate certificateKeystoreFile="conf/getheading.xyz.jks"
-			 certificateKeystorePass="czf32604457"
-                         type="RSA" />
+			 certificateKeystorePass="czf32604457"/>
         </SSLHostConfig>
     </Connector>
 

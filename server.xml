@@ -86,7 +86,7 @@
     -->
 
     <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
-               maxThreads="150" SSLEnabled="true">
+               maxThreads="150" SSLEnabled="true" URIEncoding="UTF-8">
         <SSLHostConfig>
             <Certificate certificateKeystoreFile="conf/getheading.xyz.jks"
 			 certificateKeystorePassword="czf32604457"

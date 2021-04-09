@@ -175,3 +175,30 @@ java.sql文档初步阅读。
     </user-data-constraint>
     </security-constraint>
 在修改server.xml、web.xml的过程中用git进行了版本控制，其中server.xml版本迭代到了8.0。（QAQ）
+
+2021/4/9
+递归实现反转链表
+class ListNode {
+    int val;
+    ListNode next = null;
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+	/*
+	 * 反转链表，递归
+	 * 参数：链表头head
+	 * 输出：反转后的链表头reHead
+	 */
+    public static ListNode ReverseList(ListNode head) {
+    	//考虑0个或一个节点
+    	if(head == null || head.next == null)
+    		return head;
+    	//考虑局部两个节点
+    	ListNode reHead = ReverseList(head.next);
+    	head.next.next = head;
+    	head.next = null;
+    	return reHead;
+    }
+永远检查引用的对象是否为null   

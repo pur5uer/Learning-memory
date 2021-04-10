@@ -150,13 +150,13 @@ java.sql文档初步阅读。
                redirectPort="8443" />
 	
 	<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
-               maxThreads="150" SSLEnabled="true" URIEncoding="UTF-8">
-        <SSLHostConfig>
-            <Certificate certificateKeystoreFile="conf/getheading.xyz.jks"
+	           maxThreads="150" SSLEnabled="true" URIEncoding="UTF-8">
+	    <SSLHostConfig>
+	        <Certificate certificateKeystoreFile="conf/getheading.xyz.jks"
 			 certificateKeystorePassword="czf32604457"
-                type="RSA"/>
-        </SSLHostConfig>
-    </Connector>
+	            type="RSA"/>
+	    </SSLHostConfig>
+	</Connector>
 ——配置web.xml：
 在</welcome-file-list>后换行并添加：
     <login-config>
@@ -185,12 +185,12 @@ class ListNode {
     ListNode(int val) {
         this.val = val;
     }
-
-	/*
-	 * 反转链表，递归
-	 * 参数：链表头head
-	 * 输出：反转后的链表头reHead
-	 */
+    
+    /*
+     * 反转链表，递归
+     * 参数：链表头head
+     * 输出：反转后的链表头reHead
+     */
     public static ListNode ReverseList(ListNode head) {
     	//考虑0个或一个节点
     	if(head == null || head.next == null)
@@ -203,10 +203,11 @@ class ListNode {
     }
 永远检查引用的对象是否为null   
 
-
 2021/4/10
 markdown学习笔记，编辑器为Typora
 申请了博客园博客，并将以下内容作为第一篇博客
+试试用博客代替手写笔记
+
 # MarkDown学习
 
 ## 标题

@@ -306,3 +306,14 @@ public Class MyClass{
 
 
 总结了多态、接口和抽象类
+
+
+
+2021/4/16
+
+最近几天的学习内容都总结在博客上了
+
+也同步在远程库Blogs中
+
+[我的博客](https://www.cnblogs.com/getheading/)
+

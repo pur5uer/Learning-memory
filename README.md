@@ -322,14 +322,23 @@ public Class MyClass{
 
 
 2021/4/18
+
 IDEA快捷键
+
 快速抛出异常 alt+enter
+
 快速构建代码 alt+insert
+
 打开structure alt+7
+
 快速写main main
+
 快速写println sout
+
 快速写foreach x.for x为实现了Iterator接口的类的对象
+
 快速写println x.sout
+
 快速写for num.for 循环num次
 
 将反射学完，明天练习并总结到博客

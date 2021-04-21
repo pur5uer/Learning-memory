@@ -322,12 +322,16 @@ public Class MyClass{
 
 
 2021/4/18
+
 IDEA快捷键
 
 快速抛出异常 alt+enter
 
+<<<<<<< HEAD
 生成引用 alt+enter
 
+=======
+>>>>>>> 3fcabd09ed7358c0fee0c0f41c836571cdbe65fa
 快速构建代码 alt+insert
 
 打开structure alt+7

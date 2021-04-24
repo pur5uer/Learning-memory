@@ -304,6 +304,7 @@ IDEA快捷键
 快速写foreach x.for x为实现了Iteratable接口的类的对象
 快速写println x.sout
 快速写for num.for 循环num次
+surround with    ctrl+alt+t
 将反射学完，明天练习并总结到博客
 
 
@@ -313,3 +314,6 @@ IDEA快捷键
 
 2021/4/21
 开始系统学习HTML
+
+2021/4/24
+设置mysql的customers表下一个id(自增id)从19开始:alter table customers AUTO_INCREMENT=19;
